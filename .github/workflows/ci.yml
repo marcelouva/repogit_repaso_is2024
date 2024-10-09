@@ -12,7 +12,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
@@ -22,7 +21,7 @@ jobs:
 
     - name: Build Docker image
       run: docker build -t sinatra-app .
-
+      
     - name: Run tests
       run: docker run -e RACK_ENV=test sinatra-app bundle exec rspec
 
