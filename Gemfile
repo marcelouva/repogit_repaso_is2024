@@ -12,6 +12,7 @@ end
 
 gem 'sinatra-activerecord'
 gem 'sqlite3'
+gem 'pg'
 gem 'rake'
 gem 'bcrypt'
 gem 'rack-session'
